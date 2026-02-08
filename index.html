@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Majlis Live - Star Club</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <div id="login-screen">
+            <div class="logo-circle">⭐</div>
+            <h1>Majlis Live</h1>
+            <p>Admin: 1649554599</p>
+            <input type="text" id="user-id" placeholder="Apni ID likhein...">
+            <button onclick="login()">ENTER LIVE ROOM</button>
+        </div>
+        
+        <div id="room-screen" style="display:none;">
+            <div id="video-container"></div>
+            
+            <button id="admin-btn" style="display:none;" onclick="openAdmin()">👑 OWNER PANEL</button>
+
+            <div id="gift-layer"></div>
+
+            <div class="bottom-bar">
+                <input type="text" placeholder="Chat karein..." id="chat-input">
+                <div class="gift-icon" onclick="openAdmin()">🎁</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://resource.zegocloud.com/prebuilt/zegocloud-prebuilt.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
